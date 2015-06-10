@@ -10,8 +10,7 @@ class Tree
     def final_height(cycles)
         if cycles == 0
             puts 1
-        else 
-            start = 0
+        else
             height = 1
             (1..cycles).each  do |el|
                 if el.even?
@@ -20,10 +19,10 @@ class Tree
                     height = height * 2
                 end
             end
-             puts height    
+             puts height
          end
     end
-end   
+end
 
 a = Tree.new
 a.utopian_tree
